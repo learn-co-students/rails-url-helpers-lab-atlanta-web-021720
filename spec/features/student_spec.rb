@@ -63,7 +63,7 @@ describe 'Activate page' do
   end
 
   it "Should mark an active student as inactive" do
-    @student.active = true
+    # @student.active = true
     @student.save
     visit activate_student_path(@student)
     @student.reload
