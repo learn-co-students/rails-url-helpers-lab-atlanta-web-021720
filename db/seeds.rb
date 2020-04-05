@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Student.destroy_all
+Student.create([{ first_name: "Rick", last_name: "Sanchez" ,created_at: "03142020", updated_at:"03142020", active:false}, 
+    { first_name: "Morty", last_name: "Smith" ,created_at: "03142020", updated_at:"03142020", active:false}])
+
+#rails generate migration add_fieldname_to_tablename fieldname:string
